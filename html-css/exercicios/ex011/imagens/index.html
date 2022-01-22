@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>
+        Imagens dinâmicas
+    </h1>
+    <p>
+        tente abrir esse site em vários despositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem-m.png" type="image/png">
+        <img src="imagem-g.png" alt="imagem flex">
+    </picture>
+    <h1>
+        Reproduzindo Áudios
+    </h1>
+    <p>
+        Vamos aprender a reproduzir Áudios em HTML5
+    </p>
+    <audio src="midias/Red Light Runner - Silent Partner.mp3" controls ></audio>
+    <p>
+        vamos inserir áudios de uma maneirAa que seja mais compativel com todos os navegadores
+    </p>
+    <audio controls>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+</html>

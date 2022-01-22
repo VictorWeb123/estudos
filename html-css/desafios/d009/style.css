@@ -1,0 +1,19 @@
+body {
+    background: #000;
+    
+}
+h1 {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+section {
+    margin-top: 80px;
+    margin-left: 510px;
+}
+a {
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Grouping Tag's</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: rgb(253, 135, 253);
+            margin: 0px;
+        }
+        header {
+            background: linen;
+            padding: 5px;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            margin-top: 9px;
+            box-shadow: 3px 2px 1px 1px rgba(0, 0, 0, 0.336);
+        }
+        main {
+            background: linen;
+            padding: 5px;
+            max-width: 700px;
+            margin: auto;
+            margin-top: 5px;
+            box-shadow: 3px 2px 1px 1px rgba(0, 0, 0, 0.336);
+        }
+        main > h3 {
+            text-align: center;
+        }
+        main > nav {
+            background: dimgray;
+        }
+        main > nav > a {
+            text-decoration: none;
+            color: linen;
+            font-weight: bold;
+            margin-left: 80px;
+        }
+        main > nav > a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background: linen;
+            padding: 5px;
+            max-width: 700px;
+            margin: auto;
+            margin-top: 5px;
+            box-shadow: 3px 2px 1px 1px rgba(0, 0, 0, 0.336);
+        }
+        section {
+            text-align: center;
+        }
+        footer {
+            background: linen;
+            text-align: center;
+            font-weight: bold;
+            padding: 2px;
+            margin-top: 5px;
+            box-shadow: 3px 2px 1px 1px rgba(0, 0, 0, 0.336);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-header">
+            Criando meu Protótipo
+        </h1>
+        <h2 class="titulo-header">
+            Estudando Tag's de Agrupamentos
+        </h2>
+    </header>
+    <main>
+        <h3>
+            São tag's pra agruparmos o conteúdo de forma semântica
+        </h3>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </main>
+    <section>
+        <article>
+            <h3>
+                A História da internet 
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, possimus! Non cumque velit eius unde, id reprehenderit nesciunt ipsa ea mollitia doloribus vitae placeat reiciendis dignissimos laudantium quis praesentium at!
+            </p>
+        </article>
+    </section>
+    <footer>
+        Criado por VictorDevWeb
+    </footer>
+</body>
+</html>

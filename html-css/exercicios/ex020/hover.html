@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: cyan;
+            background: darkgray;
+        }
+        div:hover {
+            color: #8413d4;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de montagem de hover
+    </h1>
+    <p>
+        Passando omouse sobre o texto abaixo vamos ver a mudança acontecer
+    </p>
+    <div>
+        Passe o mouse aqui!!!
+        <p>
+            Achamos o Texto que estava oculto...
+        </p>
+    </div>
+    <p>
+        Fim de exemplo!!!
+    </p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclass e pseudoelementos</title>
+    <style>
+        /*
+        # => id
+        . => class
+        :pseudoclass
+        ::pseudoelementos
+        */
+        body {
+            background: #000;
+        }
+        main {
+            width: 400px;
+            background: cornsilk;
+            margin: auto;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        ul, li {
+            list-style: none;
+        } 
+        a {
+            color: #443564;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgba(27, 78, 38, 0.123);
+        }
+        a:active {
+            color: #d5443a;
+        }
+        a::after {
+            content: '[link importante]';
+            color: brown;
+            content: '<=';
+        }
+        a::before {
+            content: '=>';
+            color: brown;
+        }
+        .destaque:hover {
+            background: rgba(95, 158, 160, 0.199);
+        }
+    </style>
+</head>
+<body>
+   <main>
+       <h1>
+           teste com links
+       </h1>
+       <p>
+           Testando algumas pseudoclass e pseudoelementos em css para incrementar o nosso Site
+       </p>
+       <ul>
+           <li>
+               <a href="#" class="destaque" target="_blank" rel="external">
+                    Canal do curso em video
+               </a>
+           </li>
+           <li>
+               <a href="#" class="destaque" target="_blank" rel="external">
+                   Repositorio no github
+               </a>
+            </li>
+           <li>
+               <a href="#" class="destaque" target="_blank" rel="external">
+                   Site do CeV
+               </a>
+            </li>
+       </ul>
+   </main>
+</body>
+</html>

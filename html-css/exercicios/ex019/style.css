@@ -1,0 +1,44 @@
+:root {
+    --cor01: #25b773;
+    --cor02: #248c37;
+    --cor03: #3ca51f;
+    --cor04: #9DDE1F;
+    --cor05: #e1db1c81;
+}
+@import url('https://fonts.googleapis.com/css2? family = Pushster & display = swap');
+body {
+    background: var(--cor05);
+}
+main {
+    background: var(--cor04);
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 13px;
+    margin: auto;
+}
+h1 {
+    color: var(--cor01);
+}
+p {
+    color: var(--cor03);
+    font-size: 20px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#destaque {
+    color: var(--cor02);
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.397);
+}
+.topico {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.644);
+
+}
+.subtopico {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--cor01);
+}
