@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>posicionamento de imagens no fundo</title>
+    <title>Fixando imagens de background</title>
     <style>
         body {
             height: 100vh;
-            background: rgba(64, 224, 208, 0.349);
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+            /*
+            shorthand background
+            color > image > position > [size] (propriedade size ainda não funciona no shorthand background) > attachment
+            */
+            background: #40e0d059 url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
         main {
@@ -20,6 +21,7 @@
             border: 3px dashed #0988;
             margin: auto;
             text-align: justify;
+            padding: 20px;
         }
     </style>
 </head>
