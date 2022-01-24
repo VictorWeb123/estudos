@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Imagens no fundo de um Site</title>
+    <style> 
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        h1 {
+            background: #fff;
+        }
+        p {
+            background: #fff;
+        }
+        .quadrado {
+            border: 3px solid #000;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            background: gray;border-radius: 10px;
+        }
+        #q1 {
+            background: indianred;
+        }
+        #q2 {
+            background-image: linear-gradient(to bottom, black, red);
+            color: #fff;
+        }
+        #q3 {
+            background-image: url(imagens/pattern002.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Criando div's com fundos diferentes
+    </h1>
+    <p>
+        Testando as propriedades de background em CSS3
+    </p>
+    <div class="quadrado" id="q1">
+        bloco 1
+    </div>
+    <div class="quadrado" id="q2">
+        bloco 2
+    </div>
+    <div class="quadrado" id="q3">
+        bloco 3 
+    </div>
+</body>
+</html>
