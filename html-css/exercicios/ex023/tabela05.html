@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: cornsilk;
+            }
+            main {
+                background: rgba(101, 228, 228, 0.479);
+                max-width: 700px;
+                padding: 20px;
+                margin: auto;
+                text-align: center;
+            }
+            table {
+                margin-top: 10px;
+                border-collapse: collapse;
+                width: 700px;
+                height: 250px;
+            }
+            td, th {
+                border: 1px solid #453;
+            }
+            tbody > tr:nth-child(2n) {
+                background: rgba(144, 143, 143, 0.384);
+            }
+            col.nome {
+                background: rgb(122, 233, 122);
+            }
+            col.sexo {
+                background: rgba(0, 128, 0, 0.199);
+            }
+            col.idade {
+                background: rgba(128, 128, 128, 0.253);
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>
+                Exercicio de Tabelas
+            </h1>
+            <table>
+                <colgroup>
+                    <!--
+                        a tag de agrupamento de colunas vai funcionar na ordem, da esquerda pra direita
+                    -->
+                    <!--
+                        podemos tbm fazer com que uma unica tag (<col>) fazer modificações em mais de uma coluna utilizando o atribudo de espansão (span)
+                    -->
+                    <col class="nome">
+                    <col class="sexo">
+                    <col class="idade" span="2">
+                </colgroup>
+                <caption>
+                    <strong>Tabela de Cadastro</strong>
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Nome
+                        </th>
+                        <th scope="col">
+                            Sexo
+                        </th>
+                        <th scope="col">
+                            Idade
+                        </th>
+                        <th scope="col">
+                            Profissão
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Ana Maria
+                        </td>
+                        <td>
+                            F
+                        </td>
+                        <td>
+                            25
+                        </td>
+                        <td>
+                            Jornalista
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cláudio
+                        </td>
+                        <td>
+                            M
+                        </td>
+                        <td>
+                            28
+                        </td>
+                        <td>
+                            Programador
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gustavo
+                        </td>
+                        <td>
+                            M
+                        </td>
+                        <td>
+                            42
+                        </td>
+                        <td>
+                            Professor
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hélio
+                        </td>
+                        <td>
+                            M
+                        </td>
+                        <td>
+                            19
+                        </td>
+                        <td>
+                            Vendendor
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Maria
+                        </td>
+                        <td>
+                            F
+                        </td>
+                        <td>
+                            39
+                        </td>
+                        <td>
+                            Médica
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Otávio
+                        </td>
+                        <td>
+                            M
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            Nutricionista
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
