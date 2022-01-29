@@ -1,0 +1,19 @@
+@charset "utf8";
+
+body {
+    font-family: monospace;
+}
+table {
+    border-collapse: collapse;
+    width: 800px;
+    height: 200px;
+}
+td, th {
+    border: 1px solid #323424;
+}
+tr:nth-child(2n) { 
+    background: #e543;
+}
+#tabela {
+    overflow-x: scroll;
+}
