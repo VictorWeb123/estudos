@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            background: #ae5a887e;
+            font: normal 20px arial;
+        }
+        h1, p, div {
+            color: rgb(26, 138, 101);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Introdução ao DOM
+    </h1>
+    <p>
+        Aqui vai o Resultado
+    </p>
+    <p>
+        Geração <strong>Zeta</strong>
+    </p>
+    <div id="msg">
+        Click em mim
+    </div>
+    <script>
+        let corpo = window.document.body
+        let p1 = window.document.getElementsByTagName('p')[1]
+        // let d = document.getElementById('msg');
+        // d.style.background = '#000'
+        // d.innerText = 'Já aguardei até demais...'
+        var d = document.querySelector('div#msg')
+        d.style.color = 'purple'
+    </script>
+</body>
+</html>
