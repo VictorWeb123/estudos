@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: gray;
+        }
+        main {
+            background: honeydew;
+            max-width: 501px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .botao {
+            background: rgba(0, 0, 0, 0.539);
+            color: gold;
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Sistemas de multas
+        </h1>
+        <p>
+            Abaixo vamos ver como se calculas as multas de transito
+        </p>
+        Velocidade do veiculo <input type="number" name="txtvel" id="txtvel">
+        <input type="button" value="verify" onclick="calcular()" class="botao">
+        <div id="res">
+            
+        </div>
+    </main>
+    <script>
+        function calcular() {
+            let txtvel = document.querySelector('#txtvel')
+            let res = document.querySelector('#res')
+            let vel = Number(txtvel.value)
+            res.innerHTML = `Sua velocidade atual é de ${vel}`
+            if (vel > 60) {
+                res.innerHTML = (`Sua Velocidade atual é de ${vel}km/h`)
+            }else{
+                console.log('Continue viajando com Cuidado')
+            }
+            console.log('Diriga sempre com o cinto de segurança!')
+        }
+    </script>
+</body>
+</html>
