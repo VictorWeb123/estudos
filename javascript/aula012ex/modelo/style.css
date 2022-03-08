@@ -1,0 +1,19 @@
+body {
+    background: rgb(96, 141, 184);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    color: #fff;
+    text-align: center;
+}
+section {
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+footer {
+    color: #fff;
+    text-align: center;
+}
