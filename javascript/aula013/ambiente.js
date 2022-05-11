@@ -1,8 +1,34 @@
-var c = 1
-do {
-    console.log(`olá eu fui o numero = ${c}`)
-    c++
-}while (c <= 200)
+function contar() {
+    let c = document.querySelector('#contando')
+    let passos = 9
+    let res = document.querySelector('#res')
+    res.innerHTML = `já dei ${passos} passos`
+    if(passos >= 10) {
+        document.styleSheets.background = '#6E85A0'
+    
+    }
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
 
 
 

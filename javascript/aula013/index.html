@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ambiente em JS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: rgba(245, 245, 148, 0.952);
+        }
+        div {
+            background: #fff;
+            margin: auto;
+            width: 500px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        olá testando repeições em JS
-    </h1>
+    <div id="contando">
+        <h1>olá testando repetições em JS</h1>
+        <input type="button" value="contar" onclick="contar()">
+        <input type="number" name="passos" id="passos">
+    </div>
+    <div id="res"></div>
 </body>
     <script src="ambiente.js"></script>
 </html>
