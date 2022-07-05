@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(90deg, #334353, #334585);
+}
+h1, h2, div, b{
+    font-family: sans-serif;
+    color: aliceblue;
+}
+h1 {
+    text-align: center;
+}
+input {
+    border: none;
+    outline: none;
+}
+section {
+    margin: 20px auto;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid white;
+}
+div {
+    margin-top: 5px;
+}
